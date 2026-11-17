@@ -1,0 +1,13 @@
+node_modules/
+dist/
+coverage/
+.env
+.env.*
+!.env.example
+spike/raw/
+*.tgz
+.DS_Store
+docs/.vitepress/dist/
+docs/.vitepress/cache/
+recipe-tests/
+tests/fixtures/
