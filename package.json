@@ -1,6 +1,6 @@
 {
   "name": "whishpay-sdk",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Unofficial TypeScript SDK for the Whish Pay API (v2). Not affiliated with or endorsed by Whish Money.",
   "license": "MIT",
   "author": "Omar Zeineddine",
