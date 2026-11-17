@@ -1,7 +1,6 @@
 {
   "name": "whishpay-sdk",
   "version": "0.1.0",
-  "private": true,
   "description": "Unofficial TypeScript SDK for the Whish Pay API (v2). Not affiliated with or endorsed by Whish Money.",
   "license": "MIT",
   "author": "Omar Zeineddine",
@@ -68,7 +67,8 @@
     "spike": "node --env-file=.env spike/spike.mjs",
     "smoke": "node --env-file=.env scripts/sandbox-smoke.mjs",
     "docs:dev": "npm --prefix docs run dev",
-    "docs:build": "npm --prefix docs run build"
+    "docs:build": "npm --prefix docs run build",
+    "prepublishOnly": "npm run typecheck && npm run lint && npm test && npm run build"
   },
   "devDependencies": {
     "@arethetypeswrong/cli": "^0.18.5",
@@ -80,5 +80,8 @@
     "typescript-eslint": "^8.73.0",
     "vite": "^8.3.8",
     "vitest": "^5.1.0"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
