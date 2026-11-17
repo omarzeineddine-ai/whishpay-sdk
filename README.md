@@ -1,5 +1,9 @@
 # whishpay-sdk
 
+[![npm version](https://img.shields.io/npm/v/whishpay-sdk)](https://www.npmjs.com/package/whishpay-sdk)
+[![CI](https://github.com/omarzeineddine-ai/whishpay-sdk/actions/workflows/ci.yml/badge.svg)](https://github.com/omarzeineddine-ai/whishpay-sdk/actions/workflows/ci.yml)
+[![license](https://img.shields.io/npm/l/whishpay-sdk)](LICENSE)
+
 Unofficial TypeScript SDK for the Whish Pay API (v2).
 
 **[Documentation](https://omarzeineddine-ai.github.io/whishpay-sdk/)** · [Next.js recipe](https://omarzeineddine-ai.github.io/whishpay-sdk/recipes/nextjs) · [Payload CMS recipe](https://omarzeineddine-ai.github.io/whishpay-sdk/recipes/payload)
@@ -159,6 +163,19 @@ npm test            # unit tests against the mock
 npm run build
 npm run smoke       # real sandbox; needs WHISH_* in .env
 ```
+
+## Releasing
+
+Releases are published to npm by GitHub Actions when a version tag is pushed.
+
+```bash
+npm version patch          # or minor / major: bumps package.json, commits, tags
+git push --follow-tags     # the Release workflow publishes the tagged version
+```
+
+The workflow checks that the tag matches `package.json`, runs the full test
+suite, and publishes through npm trusted publishing, so no npm token is stored
+in the repository.
 
 ## License
 
