@@ -11,6 +11,7 @@ export default defineConfig({
   lastUpdated: true,
   themeConfig: {
     search: { provider: 'local' },
+    socialLinks: [{ icon: 'github', link: 'https://github.com/omarzeineddine-ai/whishpay-sdk' }],
     nav: [
       { text: 'Guide', link: '/guide/getting-started' },
       { text: 'Recipes', link: '/recipes/nextjs' },
