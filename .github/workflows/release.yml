@@ -23,6 +23,7 @@ jobs:
             exit 1
           fi
       - run: npm ci
+      - run: npm run build # check:package inspects dist/
       - run: npm run check:package
       # prepublishOnly runs typecheck, lint, tests and build first.
       - run: npm publish
