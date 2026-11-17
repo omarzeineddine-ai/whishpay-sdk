@@ -4,6 +4,15 @@
   "private": true,
   "description": "Unofficial TypeScript SDK for the Whish Pay API (v2). Not affiliated with or endorsed by Whish Money.",
   "license": "MIT",
+  "author": "Omar Zeineddine",
+  "homepage": "https://omarzeineddine-ai.github.io/whishpay-sdk/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/omarzeineddine-ai/whishpay-sdk.git"
+  },
+  "bugs": {
+    "url": "https://github.com/omarzeineddine-ai/whishpay-sdk/issues"
+  },
   "type": "module",
   "sideEffects": false,
   "main": "./dist/index.cjs",
