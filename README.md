@@ -2,6 +2,8 @@
 
 Unofficial TypeScript SDK for the Whish Pay API (v2).
 
+**[Documentation](https://omarzeineddine-ai.github.io/whishpay-sdk/)** · [Next.js recipe](https://omarzeineddine-ai.github.io/whishpay-sdk/recipes/nextjs) · [Payload CMS recipe](https://omarzeineddine-ai.github.io/whishpay-sdk/recipes/payload)
+
 > **Not affiliated with, endorsed by, or supported by Whish Money.** This is an
 > independent, community project. You need your own Whish merchant credentials
 > to use it.
