@@ -127,9 +127,51 @@
   font-weight: 600;
   letter-spacing: -0.01em;
 }
-.DocSearch-Button,
-.VPNavBarSearchButton {
-  border: 1px solid var(--vp-c-divider);
-  border-radius: 8px;
-  background: transparent;
+@media (min-width: 768px) {
+  .VPNavBarSearch .DocSearch-Button {
+    border: 1px solid var(--vp-c-divider);
+    border-radius: 8px;
+    background: transparent;
+  }
+}
+
+/* Phones and tablets: the default theme pulls the hero image up under the nav
+   with negative margins and a fixed square box. Put the code panel below the
+   text and buttons instead, at full width. */
+@media (max-width: 959px) {
+  .VPHero.has-image .image {
+    order: 3;
+    margin: 40px 0 0;
+  }
+  .VPHero.has-image .image-container {
+    width: 100%;
+    height: auto;
+  }
+  .hero-code {
+    max-width: 100%;
+  }
+  .hero-code pre {
+    padding: 14px;
+  }
+  .hero-code code {
+    font-size: 12px;
+  }
+}
+
+/* Home page on phones: keep code blocks inside the page gutter, aligned with
+   the headings and feature cards, instead of the default edge-to-edge bleed. */
+@media (max-width: 639px) {
+  .VPHome .vp-doc div[class*='language-'] {
+    margin-left: 0;
+    margin-right: 0;
+    border-radius: 8px;
+  }
+  .VPHome .vp-doc .vp-code-group .tabs {
+    margin-left: 0;
+    margin-right: 0;
+    border-radius: 8px 8px 0 0;
+  }
+  .VPHome .vp-doc .vp-code-group div[class*='language-'] {
+    border-radius: 0 0 8px 8px;
+  }
 }

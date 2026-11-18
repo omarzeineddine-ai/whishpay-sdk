@@ -65,7 +65,12 @@ export const whish = new Whish({
   secret: process.env.WHISH_SECRET!,
   websiteUrl: process.env.WHISH_WEBSITE_URL!,
   environment: 'sandbox',
-  userAgent: { name: 'AcmeStore', version: '1.0', website: 'https://acme.example', email: 'dev@acme.example' },
+  userAgent: {
+    name: 'AcmeStore',
+    version: '1.0',
+    website: 'https://acme.example',
+    email: 'dev@acme.example',
+  },
 });
 ```
 
